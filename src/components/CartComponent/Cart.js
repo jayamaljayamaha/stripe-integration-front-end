@@ -9,7 +9,6 @@ import './Cart.css'
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
-console.log("pub key " + process.env.REACT_APP_STRIPE_PUB_KEY)
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUB_KEY);
 const Cart = ({ cart, setSnackSuccessOpen, setSnackFailedOpen }) => {
 
